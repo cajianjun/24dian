@@ -14,6 +14,8 @@ declare class profileSkillListIRSkin extends eui.Skin{
 }
 declare class profileUISkin extends eui.Skin{
 }
+declare class singlePlayUISkin extends eui.Skin{
+}
 declare module skins{
 	class ButtonSkin extends eui.Skin{
 	}

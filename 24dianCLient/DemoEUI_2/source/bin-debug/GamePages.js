@@ -10,6 +10,7 @@ var GamePages = (function () {
     GamePages.GOODS = "goods";
     GamePages.ABOUT = "about";
     GamePages.HOME = "home";
+    GamePages.SINGLEPLAY = "single play";
     return GamePages;
 }());
 egret.registerClass(GamePages,'GamePages');

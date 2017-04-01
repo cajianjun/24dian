@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="singlePlayUISkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="card1" text="Label" x="139" y="255" anchorOffsetY="0" height="91" size="50" anchorOffsetX="0" width="74"/>
+	<e:Label text="Label" x="29" y="255" anchorOffsetY="0" height="91" size="50" anchorOffsetX="0" width="74" id="card0"/>
+	<e:Label text="Label" x="267" y="255" anchorOffsetY="0" height="91" size="50" anchorOffsetX="0" width="74" id="card2"/>
+	<e:Label id="card3" text="Label" x="383" y="255" anchorOffsetY="0" height="91" size="50" anchorOffsetX="0" width="74"/>
+    <e:Button id="btnReturn" x="13" y="132">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image width="90%" height="90%" width.down="100%" height.down="100%" horizontalCenter="0" verticalCenter="0" source="btnReturn_png" source.down="btnReturn_png"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

@@ -20,6 +20,7 @@ var game_file_list = [
 	"bin-debug/part/GoodsUI.js",
 	"bin-debug/part/HerosUI.js",
 	"bin-debug/part/ProfileUI.js",
+	"bin-debug/part/SinglePlayUI.js",
 	//----auto game_file_list end----
 ];
 

@@ -77,7 +77,8 @@ var HomeUI = (function (_super) {
                 this._pageFocused = GamePages.GOODS;
                 break;
             case this.mbtnAbout:
-                this._pageFocused = GamePages.ABOUT;
+                // this._pageFocused = GamePages.ABOUT ;
+                this._pageFocused = GamePages.SINGLEPLAY;
                 break;
         }
         this.dispatchEventWith(GameEvents.EVT_LOAD_PAGE, false, this._pageFocused);
@@ -125,6 +126,16 @@ var HomeUI = (function (_super) {
                 }
                 this.imgBg.source = "bgListPage_jpg";
                 this._uiFocused = this._goodsUI;
+                break;
+            case GamePages.SINGLEPLAY:
+                if (!this._singlePlayUI) {
+                    this._singlePlayUI = new SinglePlayUI();
+                    this._singlePlayUI.addEventListener(GameEvents.EVT_RETURN, function () {
+                        _this.resetFocus();
+                        _this.goHome();
+                    }, this);
+                }
+                this._uiFocused = this._singlePlayUI;
                 break;
             case GamePages.ABOUT:
                 if (!this._aboutUI) {

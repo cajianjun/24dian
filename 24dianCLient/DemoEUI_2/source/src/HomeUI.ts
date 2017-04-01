@@ -89,7 +89,8 @@ class HomeUI extends eui.Component{
                 this._pageFocused = GamePages.GOODS ;
                 break;
             case this.mbtnAbout:
-                this._pageFocused = GamePages.ABOUT ;
+                // this._pageFocused = GamePages.ABOUT ;
+                this._pageFocused = GamePages.SINGLEPLAY ;
                 break;
         }
         this.dispatchEventWith( GameEvents.EVT_LOAD_PAGE, false, this._pageFocused );
@@ -111,6 +112,7 @@ class HomeUI extends eui.Component{
     private _goodsUI:GoodsUI;
     private _aboutUI:AboutUI;
     private _uiFocused:eui.Component;
+    private _singlePlayUI:SinglePlayUI;
     
     private imgBg:eui.Image;
     
@@ -156,6 +158,16 @@ class HomeUI extends eui.Component{
                 }
                 this.imgBg.source = "bgListPage_jpg";
                 this._uiFocused = this._goodsUI;
+                break;
+            case GamePages.SINGLEPLAY:
+                if(!this._singlePlayUI){
+                    this._singlePlayUI = new SinglePlayUI();
+                    this._singlePlayUI.addEventListener(GameEvents.EVT_RETURN,()=>{
+                        this.resetFocus();
+                        this.goHome();
+                    },this);
+                }
+                this._uiFocused = this._singlePlayUI;
                 break;
             case GamePages.ABOUT:
                 if( !this._aboutUI ){
