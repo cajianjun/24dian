@@ -4,10 +4,10 @@
 
 class SinglePlayUI extends eui.Component {
 
-    private card0:eui.Label;
-    private card1:eui.Label;
-    private card2:eui.Label;
-    private card3:eui.Label;
+    private puke1:Puke;
+    private puke2:Puke;
+    private puke3:Puke;
+    private puke4:Puke;
     private btnReturn:eui.Button;
     constructor() {
         super();
@@ -16,10 +16,11 @@ class SinglePlayUI extends eui.Component {
     }
 
     private uiCompHandler():void {
-        this.card0.text="4";
-        this.card1.text="4";
-        this.card2.text="10";
-        this.card3.text="10";
+        this.puke1.num= 4;
+        this.puke2.num= 4;
+        this.puke3.num= 10;
+        this.puke4.num= 10;
+        
         /// 返回逻辑
         this.btnReturn.addEventListener( egret.TouchEvent.TOUCH_TAP, ()=> {
             this.dispatchEventWith( GameEvents.EVT_RETURN );

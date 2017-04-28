@@ -1,5 +1,7 @@
 declare class aboutUISkin extends eui.Skin{
 }
+declare class pukeSkin extends eui.Skin{
+}
 declare class goodsListIRSkin extends eui.Skin{
 }
 declare class GoodsUISkin extends eui.Skin{

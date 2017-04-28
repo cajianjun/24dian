@@ -2,6 +2,7 @@
   "autoGenerateExmlsList": true,
   "exmls": [
     "resource/custom_skins/aboutUISkin.exml",
+    "resource/custom_skins/comp/pukeSkin.exml",
     "resource/custom_skins/goodsListIRSkin.exml",
     "resource/custom_skins/goodsUISkin.exml",
     "resource/custom_skins/herosListIRSkin.exml",

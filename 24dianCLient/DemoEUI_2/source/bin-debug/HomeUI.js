@@ -135,6 +135,7 @@ var HomeUI = (function (_super) {
                         _this.goHome();
                     }, this);
                 }
+                this.imgBg.source = "bgListPage_jpg";
                 this._uiFocused = this._singlePlayUI;
                 break;
             case GamePages.ABOUT:

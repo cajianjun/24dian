@@ -21,6 +21,7 @@ var game_file_list = [
 	"bin-debug/part/HerosUI.js",
 	"bin-debug/part/ProfileUI.js",
 	"bin-debug/part/SinglePlayUI.js",
+	"bin-debug/part/comp/Poke.js",
 	//----auto game_file_list end----
 ];
 

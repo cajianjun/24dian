@@ -11,10 +11,10 @@ var SinglePlayUI = (function (_super) {
     var d = __define,c=SinglePlayUI,p=c.prototype;
     p.uiCompHandler = function () {
         var _this = this;
-        this.card0.text = "4";
-        this.card1.text = "4";
-        this.card2.text = "10";
-        this.card3.text = "10";
+        this.puke1.num = 4;
+        this.puke2.num = 4;
+        this.puke3.num = 10;
+        this.puke4.num = 10;
         /// 返回逻辑
         this.btnReturn.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
             _this.dispatchEventWith(GameEvents.EVT_RETURN);
