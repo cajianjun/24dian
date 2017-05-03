@@ -29,6 +29,15 @@ class SinglePlayUI extends eui.Component {
 
     protected createChildren():void {
         super.createChildren();
+        WSManager.getInstance().addDataToken("test",this.onDataReceve,this);
+    }
+    public onDataReceve(data:string):void{
+        console.log("recieve");
+        var nums = data.split(",");
+        this.puke1.num = parseInt(nums[0]);
+        this.puke2.num = parseInt(nums[1]);
+        this.puke3.num = parseInt(nums[2]);
+        this.puke4.num = parseInt(nums[3]);
     }
     
 }

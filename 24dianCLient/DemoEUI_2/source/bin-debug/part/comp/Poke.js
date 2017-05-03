@@ -26,4 +26,3 @@ var Puke = (function (_super) {
     return Puke;
 }(eui.Component));
 egret.registerClass(Puke,'Puke');
-//# sourceMappingURL=Poke.js.map
